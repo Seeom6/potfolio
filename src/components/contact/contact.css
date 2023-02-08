@@ -1,0 +1,267 @@
+ :root{
+    --valid-font: 25px;
+    --title-message: 60px;
+    --font-p: 30px;
+    --input-ht: 75px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    width: 100%;
+    position: relative;
+}
+.contact .contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 90%;
+    position: relative;
+    border: 3px solid var(--second-colo);
+    padding: 25px;
+    background: #051f42d4;
+    border-radius: 20px;
+    margin-top: 150px;
+    margin-bottom: 4px;
+}
+.contact .contact-container::before{
+    content: '';
+    position: absolute;
+    left: calc(50% - 29px);
+    height: 65%;
+    width: 60px;
+    top: 21.5%;
+    background: #051f42;
+    border-radius: 40px;
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 
+    5px 5px 15px rgb(0,0,0,0.35),
+     inset 5px 5px 15px rgb(0,0,0,0.35),
+    inset -5px -5px 15px rgba(255,255,255,0.1);
+}
+.contact .contact-container::after{
+    content: '';
+    position: absolute;
+    left: calc(50% - 8px);
+    height: 53%;
+    border-radius: 50px;
+    top: 27%;
+    width: 13px;
+    background: var(--second-colo);
+}
+.contact .contact-container .bx-envelope{
+    position: absolute;
+    font-size: 100px;
+    color: var(--second-colo);
+    top: -4%;
+    width: 132px;
+    height: 130px;
+    border-radius: 20px;
+    display: flex;
+    text-shadow: 0px 0px 10px;
+    left: calc(50% - 66px);
+    background: #051f42;
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 
+                5px 5px 15px rgb(0,0,0,0.35),
+                 inset 5px 5px 15px rgb(0,0,0,0.35),
+                inset -5px -5px 15px rgba(255,255,255,0.1);
+    justify-content: center;
+    align-items: center;
+}
+.contact .contact-container .contact-text{
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px;
+    text-align: start;
+}
+.contact .contact-container .contact-text h2{
+    font-size: var(--title-message);
+    text-transform: capitalize;}
+.contact .contact-container .contact-text h2 span{
+    font-size: calc(var(--title-message) + 5px);
+    color: var(--second-colo);
+}
+.contact .contact-container .contact-text p{
+    font-size: var(--font-p);
+    line-height: 1.8;
+    text-align: start;
+    margin-top: 80px;
+    color: #ffffff61;
+}
+.contact .contact-container .contact-text .icons{
+    display: flex;
+    justify-content: space-between;
+    font-size: calc(var(--title-message) + 10px);
+    margin-top: 60px;
+}
+.contact .contact-container .contact-text .icons i{
+    background: #051f42;
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 
+                5px 5px 15px rgb(0,0,0,0.35),
+                 inset 5px 5px 15px rgb(0,0,0,0.35),
+                inset -5px -5px 15px rgba(255,255,255,0.1);
+    color: var(--second-colo);
+    border-radius: 10px;
+    padding: 10px;
+}
+.contact .contact-container .contact-info{
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px;
+}
+.contact .contact-container .contact-info .contact-box{
+    position: relative;
+}
+.contact .contact-container .contact-info .contact-box input{
+    width: 100%;
+    height: var(--input-ht);
+    border-radius: 30px;
+    background: #051f42;
+    margin: 40px 40px 10px 40px;
+    border: none;
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 
+                5px 5px 15px rgb(0,0,0,0.35),
+                 inset 5px 5px 15px rgb(0,0,0,0.35),
+                inset -5px -5px 15px rgba(255,255,255,0.1);
+    font-size: var(--valid-font);
+    font-weight: bold;
+    color: #fff;
+    padding-left: 40px;
+}
+.contact .contact-container .contact-info .contact-box span{
+    position: absolute;
+    top: 37%;
+    left: 60px;
+    color: #ffffff61;
+    font-size: calc(var(--valid-font) - 2px);
+    transition: 0.5s;
+}
+.contact .contact-container .contact-info .contact-box input:valid ~ span,
+.contact .contact-container .contact-info .contact-box input:focus ~ span{
+    transform: translate(0px, -35px);
+    padding: 5px 10px;
+    border: 3px solid var(--second-colo);
+    text-transform: capitalize;
+    color: #ffff;
+    border-radius: 9px;
+    background: #051f42;
+}
+.contact .contact-container .contact-info .contact-box:nth-child(3) input{
+    height: calc(var(--input-ht) + 100px);
+}
+.contact .contact-container .contact-info .btn{
+    width: 100%;
+    height: var(--input-ht);
+    margin-top: 60px;
+    text-align: center;
+    font-size: calc(var(--valid-font) + 5px);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 40px 40px 10px 40px;
+    border: none;
+    background: var(--second-colo);
+    color: white;
+    border-radius: 15px;
+    box-shadow: inset;
+    box-shadow: inset -5px -5px 15px #000000eb, inset 5px 5px 15px #d6ccccb8;
+}
+
+@media (max-width: 1540px){
+    :root{
+        --valid-font: 20px;
+        --title-message: 50px;
+        --font-p: 25px;
+    }
+    .contact .contact-container{
+        padding: 40px;
+    }
+}
+@media (max-width: 1400px){
+    .contact .contact-container .contact-info .contact-box input,
+    .contact .contact-container .contact-info .btn{
+        margin: 20px 20px 10px 20px;   
+     }
+     :root{
+        --font-p: 20px;
+    }
+    .contact .contact-container .contact-info,
+    .contact .contact-container .contact-text {
+            padding: 40px 5px 5px 5px; 
+    }
+}
+@media (max-width: 1200px){
+    :root{
+        --input-ht: 60px;
+        --valid-font: 17px;
+    }
+}
+@media (max-width: 1100px){
+    .contact .contact-container{
+        flex-direction: column;
+    }
+    .contact .contact-container .contact-info .contact-box input:valid ~ span,
+.contact .contact-container .contact-info .contact-box input:focus ~ span{
+    transform: translate(0px, -30px);
+}
+    .contact .contact-container::before{
+        width: 0;
+    }
+    .contact .contact-container::after{
+        width: 0;
+    }
+    .contact .contact-container .contact-text,
+    .contact .contact-container .contact-info{
+        width: 100%;
+    }
+    .contact .contact-container .contact-info .contact-box input,
+    .contact .contact-container .contact-info .btn{
+        margin: 20px 5px 5px 5px;   
+     }
+     .contact .contact-container .contact-text .icons{
+        margin-top: 60px;
+     }
+}
+
+
+@media (max-width: 835px){
+    :root{
+        --valid-font: 16px;
+        --title-message: 40px;
+        --font-p: 16px;
+    }
+    .contact .contact-container .contact-text {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 540px){
+    .contact .contact-container .contact-info .contact-box span{
+        left: 50px;
+    }
+    .contact .contact-container{
+        width: 100%;
+    }
+    .contact .contact-container{
+        padding: 15px;
+    }
+    .contact .contact-container .contact-text{
+        margin-top: 40px;
+    }
+    :root{
+        --valid-font: 13px;
+        --title-message: 35px;
+        --font-p: 14px;
+    }
+}
+@media (max-width: 380px){
+    :root{
+        --title-message: 25px;
+
+    }
+}

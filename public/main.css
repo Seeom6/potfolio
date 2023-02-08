@@ -1,0 +1,78 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+}
+#root{
+    position: absolute;
+    background-image: url(hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100%;
+    top:0;
+    left: 0;
+    z-index: 5;
+   
+    overflow: hidden;
+}
+html{
+    font-size: 62.5%;
+}
+
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255 ,255, 255, 0.05);
+    z-index: 30;
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: Animate 5s linear infinite ;
+    border-radius: 0 0 20px 20px;
+    z-index: 40;
+}
+
+@keyframes Animate {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+#progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px)
+}
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px)
+}

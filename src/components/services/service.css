@@ -1,0 +1,115 @@
+:root{
+    --title-font: 50px;
+    --p-font: 25px;
+    --icon-font: 105px;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.service .service-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    margin-top: 100px;
+}
+.service .service-container .service-box{
+    height: 104%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 100px;
+    color: #fff;
+}
+.service .service-container .service-box .box-content{
+    width: 45%;
+    text-align: center;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-around;
+    align-items: center;
+    background: #051f42b8;
+    border-radius: 42px;
+    box-shadow: -1px 6px 30px rgb(255 255 255 / 34%), inset 5px 6px 30px rgb(255 255 255 / 88%);
+}
+.service .service-container .service-box .box-content i{
+    font-size: var(--icon-font);
+    color: var(--second-colo);
+
+}
+.bx-tada{
+    animation: none;
+}
+.service .service-container .service-box .box-content:hover:nth-child(1) .bx-tada{
+    animation: tada 1.5s ease infinite;
+}
+.service .service-container .service-box .box-content:hover:nth-child(2) .bx-tada{
+    animation: tada 1.5s ease infinite;
+}
+.service .service-container .service-box .box-content:hover:nth-child(3) .bx-tada{
+    animation: tada 1.5s ease infinite;
+}
+.service .service-container .service-box .box-content:hover:nth-child(4) .bx-tada{
+    animation: tada 1.5s ease infinite;
+}
+.service .service-container .service-box .box-content:hover:nth-child(5) .bx-tada{
+    animation: tada 1.5s ease infinite;
+}
+.service .service-container .service-box .box-content:hover:nth-child(6) .bx-tada{
+    animation: tada 1.5s ease infinite;
+}
+.service .service-container .service-box .box-content h2{
+    font-size: var(--title-font);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.service .service-container .service-box .box-content p{
+    font-size: var(--p-font);
+    max-width: 90%;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #ffffff61;
+}
+
+@media (max-width: 1440px) {
+    :root{
+        --title-font: 45px;
+        --p-font: 20px;
+        --icon-font: 105px;
+    }
+}
+@media (max-width: 1240px) {
+    :root{
+        --title-font: 35px;
+        --p-font: 20px;
+        --icon-font: 90px;
+    }
+}
+@media (max-width: 1040px) {
+    :root{
+        --title-font: 30px;
+        --p-font: 18px;
+        --icon-font: 85px;
+    }
+}
+@media (max-width: 800px) {
+    .service .service-container .service-box .box-content{
+        width: 90%;
+    }
+}
+@media (max-width: 450px) {
+    :root{
+        --title-font: 25px;
+        --p-font: 15px;
+        --icon-font: 70px;
+    }
+}

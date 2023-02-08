@@ -1,0 +1,219 @@
+:root{
+    --main-f: 60px;
+    --type-sit-: 40px;
+}
+.sittings-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -73px;
+    right: -100%;
+    transition: 0.6s linear;
+    position: absolute;
+}
+.sittings-box .sittings-container{
+
+    display: flex;
+    width: 100%;
+    margin-top: 150px;
+    position: relative;
+    z-index: 666;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50vh;
+    background: #051f42;
+}
+.sittings-box .sittings-container .bx-x{
+    position: absolute;
+    right: 20px;
+    top: 4%;
+    font-size: 50px;
+    background: #051f42;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    color: var(--second-colo);
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+}
+.sittings-box .sittings-container h1{
+    font-size: var(--main-f);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 100px 20px 20px 20px;
+    text-align: center;
+}
+.sittings-box .sittings-container .plan-sittings{
+    width: 100%;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sittings-box .sittings-container .plan-sittings h2{
+    font-size: var(--type-sit-);
+    text-transform: uppercase;
+    position: relative;
+}
+.sittings-box .sittings-container .plan-sittings h2 span{
+    font-size: 60px;
+    color: var(--second-colo);
+    text-transform: uppercase;
+    position: absolute;
+    top: -17px;
+    right: -30px;
+}
+.sittings-box .sittings-container .plan-sittings .check-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 50px 50px 50px 85px;
+    height: 200px;
+    border-radius: 40px;
+    border: 15px solid #051f42;
+    box-shadow: -5px -5px 15px rgb(255 255 255 / 10%), 5px 5px 15px rgb(0 0 0 / 35%), inset -5px -5px 15px rgb(255 255 255 / 10%), inset 5px 5px 15px rgb(0 0 0 / 35%);
+}
+.sittings-box .sittings-container .plan-sittings .check-box h3{
+    font-size: calc(var(--type-sit-) + 5px);
+    text-transform: uppercase;
+    margin: 50px;
+    color: #6b1919;
+    font-weight: bold;
+    text-align: center;
+}
+.sittings-box .sittings-container .plan-sittings .check-box .check{
+    position: absolute;
+    width: 94px;
+    transform: translate(-50%, 50%);
+    top: 0;
+    border-radius: 50%;
+    left: 50%;
+    height: 94px;
+    border: 2px;
+}
+.sittings-box .sittings-container .plan-sittings .check-box .check-btn{
+    border-radius: 50%;
+    height: calc(var(--type-sit-) + 60px);
+    width: calc(var(--type-sit-) + 60px);
+}
+.sittings-box .sittings-container .plan-sittings .check-box i{
+    font-size: calc(var(--type-sit-) + 25px);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: calc(var(--type-sit-) + 60px);
+    display: flex;
+    height: calc(var(--type-sit-) + 60px);
+    align-items: center;
+    text-shadow: 0 0 13px ;
+    justify-content: center;
+    background: #051f42;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgb(0 0 0 / 35%), 0px 0px 15px rgb(33 168 49), inset 0px -7px 12px rgb(0 0 0 / 35%), inset -2px -5px 15px rgb(255 255 255 / 30%);
+}
+.sittings-box .sittings-container .plan-sittings .check-box label{
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+}
+
+.sittings-box .sittings-container .color-sittings{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+}
+.sittings-box .sittings-container .color-sittings h2{
+    font-size: var(--type-sit-);
+    text-transform: uppercase;
+    position: relative;
+}
+.sittings-box .sittings-container .color-sittings h2 span{
+    font-size: 60px;
+    color: var(--second-colo);
+    text-transform: uppercase;
+    position: absolute;
+    top: -17px;
+    right: -30px;
+}
+.sittings-box .sittings-container .color-sittings .color-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    padding: 0px;
+    margin: 50px 50px 50px 85px;
+    height: 200px;
+    border-radius: 40px;
+    border: 15px solid #051f42;
+    box-shadow: -5px -5px 15px rgb(255 255 255 / 10%), 5px 5px 15px rgb(0 0 0 / 35%), inset -5px -5px 15px rgb(255 255 255 / 10%), inset 5px 5px 15px rgb(0 0 0 / 35%);
+}
+.sittings-box .sittings-container .color-sittings .color-box li{
+    width: calc(var(--type-sit-) + 10px);
+    height: calc(var(--type-sit-) + 10px);
+    list-style: none;
+    border-radius: 50%;
+}
+.sittings-box .sittings-container .color-sittings .color-box li:nth-child(1){
+    background: #655dff;
+}
+.sittings-box .sittings-container .color-sittings .color-box li:nth-child(2){
+    background: #ed4e3b;
+
+}
+.sittings-box .sittings-container .color-sittings .color-box li:nth-child(3){
+    background: #c9d5e0;
+
+}
+
+.showsittings{
+    right: 0px !important;
+}
+
+
+@media (max-width: 836px){
+    .sittings-box .sittings-container .color-sittings .color-box,
+    .sittings-box .sittings-container .plan-sittings .check-box{
+        height: 160px;
+        margin: 10px;
+    }
+    .sittings-box .sittings-container .plan-sittings,
+    .sittings-box .sittings-container .color-sittings{
+        flex-direction: column;
+    }
+    .sittings-box .sittings-container .plan-sittings .check-box,
+    .sittings-box .sittings-container .color-sittings .color-box{
+        width: 80%;
+    }
+    .sittings-box .sittings-container .color-sittings h2,
+    .sittings-box .sittings-container .plan-sittings h2{
+        margin: 40px 0px ;
+    }
+
+}
+@media (max-width: 440px){
+    .sittings-box .sittings-container .plan-sittings .check-box i{
+        margin: 5px;
+        height: calc(var(--type-sit-) + 40px);
+        width: calc(var(--type-sit-) + 40px);
+    }
+    .sittings-box .sittings-container .plan-sittings .check-box h3{
+        margin: 0;
+        font-size: var(--type-sit-);
+    }
+    .sittings-box .sittings-container .plan-sittings .check-box,
+    .sittings-box .sittings-container .color-sittings .color-box{
+        width: 95%;
+    }
+}
+:root{
+    --main-f: 40px;
+    --type-sit-: 30px;
+}
